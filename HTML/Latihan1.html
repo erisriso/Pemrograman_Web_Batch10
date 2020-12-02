@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<title>Latiahn Pertama HTML</title>
+	</head>
+	<body>
+		<h3>1. Membuat Table</h3>
+		<table border="1">
+			<thead>
+				<tr align="center">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama</th>
+					<th rowspan="2">Alamat</th>
+					<th colspan="2">Nama Orang Tua</th>
+					<th rowspan="2">Penghasilan (Rp)</th>
+				</tr>
+				<tr>
+					<th>Nama Ayah</th>
+					<th>Nama Ibu</th>
+				<tr>
+			<thead>
+			<tbody>
+				<tr>
+					<td align="right">1.</td>
+					<td>Eris Riso</td>
+					<td>Pekanbaru</td>
+					<td>Nama Ayah</td>
+					<td>Nama Ibu</td>
+					<td align="right">3.500.000,00</td>
+				<tr>
+				<tr>
+					<td align="right">2.</td>
+					<td>Dodi</td>
+					<td>Jakarta</td>
+					<td>Nama Ayah</td>
+					<td>Nama Ibu</td>
+					<td align="right">500.000,00</td>
+				<tr>
+				<tr>
+					<td align="right">3.</td>
+					<td>Romi Hidayat</td>
+					<td>Pekanbaru</td>
+					<td>Nama Ayah</td>
+					<td>Nama Ibu</td>
+					<td align="right">1.500.000,00</td>
+				<tr>
+			</tbody>
+		</table>
+		
+		<br>
+		
+	<table cellspacing="0" border="1">
+	
+	<tr>
+		<td colspan="10" height="32" ><font size="5" >1. FORMAT REKAPITULASI TINGKAT RT/RW/DUSUN</td>
+		<td colspan="50" > </td>
+		
+	</tr>
+	<tr>
+		<td colspan="10" height="6" align="center" valign="middle"></td>
+		<td colspan="50"></td>
+		
+	</tr>
+	<tr>
+		<td rowspan="5" height="86" align="center" valign="bottom"><b><br><img src="<?=base_url('assets/images/')?>kuansing.jpg" width="54" height="81" hspace="21" vspace="4">
+		</b></td>
+		<td colspan="2" ><b>RT/RW/DUSUN</b></td>
+		<td colspan="4" valign="bottom"><b><?=$datawilayah->nama_rt?>/<?=$datawilayah->nama_rw?>/<?=$datawilayah->nama_dusun?></b></td>
+		<td rowspan="2" align="center" valign="middle"><b>FORMAT</b></td>
+		<td colspan="2" rowspan="3" align="center" valign="middle"><b><font size="1" >REKAPITULASI PROGRAM PENDATAAN TERPADU PERUMAHAN DAN KAWASAN PEMUKIMAN KABUPATEN KUANTAN SINGINGI</b></td>
+		<td colspan="50" rowspan="4"></td>
+		
+	</tr>
+	<tr>
+		<td colspan="2" ><b>KELURAHAN/DESA</b></td>
+		<td colspan="4" align="left" valign="bottom"><b><?=$datawilayah->nama_kelurahan?></b></td>
+	
+		
+	</tr>
+	<tr>
+		<td colspan="2" ><b>KECAMATAN</b></td>
+		<td colspan="4" align="left" valign="bottom"><b><?=$datawilayah->nama_kecamatan?></b></td>
+		<td rowspan="2" align="center" valign="middle"><b><font size="6" >RD. A</b></td>
+	
+		
+	</tr>
+	<tr>
+		<td colspan="2" ><b>KABUPATEN</b></td>
+		<td colspan="4" ><b>KUANTAN SINGINGI</b></td>
+		<td  colspan="2" align="center" valign="middle"><b>FORMAT RT/RW/DUSUN</b></td>
+		
+		
+	</tr>
+	<tr>
+		<td colspan="53" ></td>
+		
+	</tr>
+	<tr>
+		<td rowspan="4" height="244" align="center" valign="middle"><b>NO URUT</b></td>
+		<td rowspan="4" align="center" valign="middle"><b>NAMA KEPALA KELUARGA </b></td>
+		<td colspan="5" align="center" valign="bottom"><b>STATUS DAN IDENTITAS KEPALA RUMAH TANGGA</b></td>
+		<td rowspan="3" align="center" valign="middle"><b>ALAMAT</b></td>
+		<td colspan="2" align="center" valign="bottom"><b>KOORDINAT RUMAH TANGGA</b></td>
+		<td colspan="2" align="center" valign="middle"><b>ASPEK PENDAPATAN</b></td>
+		<td colspan="6" align="center" valign="middle"><b>ASPEK PENGHUNIAN</b></td>
+		<td colspan="3" align="center" valign="middle"><b>ASPEK AIR MINUM</b></td>
+		<td colspan="5" align="center" valign="middle"><b>ASPEK SANITASI</b></td>
+		<td colspan="6" align="center" valign="bottom"><b>ASPEK PENGUASAAN TANAH DAN BANGUNAN</b></td>
+		<td colspan="5" align="center" valign="bottom"><b>ASPEK KETERATURAN BANGUNAN</b></td>
+		<td colspan="8" align="center" valign="middle"><b>ASPEK KESELAMATAN DAN KEKUATAN BANGUNAN</b></td>
+		<td colspan="3" align="center" valign="middle"><b>ASPEK KOMPONEN BAHAN BANGUNAN</b></td>
+		<td colspan="2" align="center" valign="middle"><b>PENGAMAN BAHAYA KEBAKARAN</b></td>
+		<td colspan="4" align="center" valign="middle"><b>LAYANAN FASILITAS SOSIAL</b></td>
+		</tr>
+	<tr>
+		<td rowspan="3" align="center" valign="middle"><b>PENDIDIKAN TERAKHIR</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>UMUR</b></td>
+		<td rowspan="2" align="center" valign="bottom"><b>JENIS KELAMIN</b></td>
+		<td rowspan="3" align="center" valign="middle"><b>NOMOR KTP</b></td>
+		<td rowspan="3" align="center" valign="middle"><b>NOMOR KK</b></td>
+		<td ><b></b></td>
+		<td ><b></b></td>
+		<td rowspan="3" align="center" valign="middle"><b>PEKERJAAN UTAMA</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>JUMLAH PENGHASILAN RATA-RATA DALAM SEBULAN</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>JUMLAH KEPALA KELUARGA DALAM SATU RUMAH TANGGA</b></td>
+		<td colspan="2" align="center" valign="middle"><b>JUMLAH PENGHUNI DALAM SATU RUMAH TANGGA</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>LUAS LANTAI HUNIAN RUMAH TANGGA</b></td>
+		<td rowspan="3" align="center" valign="middle"><b>SUMBER UTAMA PENERANGAN RUMAH TANGGA</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>JUMLAH DAYA LISTRIK YANG DIGUNAKAN RUMAH TANGGA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>SUMBER AIR MINUM</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KECUKUPAN AIR MINUM SEPANJANG TAHUN</b></td>
+		<td rowspan="2" align="center" valign="middle"><b>JARAK SUMBER AIR MINUM KE TEMPAT LIMBAH /TINJA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KEPEMILIKAN KAMAR MANDI DAN JAMBAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>JENIS KLOSET YANG DIGUNAKAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>TEMPAT PEMBUANGAN LIMBAH TINJA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>TEMPAT PEMBUANGAN SAMPAH RUMAH TANGGA</b></td>
+		<td  rowspan="2" align="center" valign="middle"><b>DURASI PEMBUANGAN SAMPAH RUMAH TANGGA KE TPA/TPB</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>STATUS KEPEMLIKAN BANGUNAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>STATUS KEPEMILIKAN TANAH BANGUNAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>STATUS LEGALITAS BANGUNAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>STATUS LEGALITAS TANAH BANGUNAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KEPEMILIKAN ASET BANGUNAN DI TEMPAT LAIN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KEPEMILIKAN ASET TANAH DI TEMPAT LAIN </b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>HUNIAN MEMILIKI AKSES LANSUNG KE JALAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>HUNIAN MENGHADAP JALAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>HUNIAN MENGHADAP SUNGAI / DANAU / DLL</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>POSISI HUNIAN DI ATAS SEMPADAN SUNGAI / DANAU / DLL</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>POSISI HUNIAN DI AREA LIMBAH PABRIK ATAU DIBAWAH</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>PONDASI</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KOLOM DAN BALOK</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KONSTRUKSI ATAP</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KONDISI ATAP</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KONDISI DINDING</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>KONDISI LANTAI</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>JENDELA / LUBANG CAHAYA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>VENTILASI</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>MATERIAL ATAP</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>MATERIAL DINDING</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>MATERIAL LANTAI</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>SARANA PROTEKSI KEBAKARAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>PRASARANA PROTEKSI KEBAKARAN</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>PILIHAN LAYANAN KEGIATAN RUMAH TANGGA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>LOKASI LAYANAN KEGIATAN RUMAH TANGGA</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>LOKASI LAYANAN PENDIDIKAN WAJAR DI AB</b></td>
+		<td  rowspan="3" align="center" valign="middle"><b>PERNAH MENDAPAT BANTUAN PERUMAHAN</b></td>
+	</tr>
+	<tr>
+		<td rowspan="2" align="center" valign="top"><b>BUJUR</b></td>
+		<td rowspan="2" align="center" valign="top"><b>LINTANG</b></td>
+		<td align="center" valign="middle"><b><font size="1" >LK</b></td>
+		<td align="center" valign="middle"><b><font size="1" >PR</b></td>
+		</tr>
+	<tr>
+		<td align="center" valign="middle"><b>(Tahun)</b></td>
+		<td align="center" valign="middle"><b>(LK/PR)</b></td>
+		<td align="center" valign="middle"><b>(nama jalan)</b></td>
+		<td align="center" ><b><font size="1" >(Rp.)</b></td>
+		<td align="center" ><b><font size="1" >(jiwa)</b></td>
+		<td align="center" ><b><font size="1" >(jiwa)</b></td>
+		<td align="center" ><b><font size="1" >(jiwa)</b></td>
+		<td align="center" ><b><font size="1" >(m2)</b></td>
+		<td align="center" valign="middle"><b><font size="1" >(watt)</b></td>
+		<td align="center" valign="middle"><b><font size="1" >(m)</b></td>
+		<td align="center" valign="middle"><b><font size="1" >(jumlah minggu)</b></td>
+		</tr>
+	<tr>
+		<td height="20" align="center" ><b><font size="1" >(1)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(2)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(3)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(4)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(5)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(6)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(7)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(8)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(9)</b></td>
+		<td align="center" valign="bottom" ><b><font size="1" >(10)</b></td>
+		<td align="center" ><b><font size="1" >(11)</b></td>
+		<td align="center" ><b><font size="1" >(12)</b></td>
+		<td align="center" ><b><font size="1" >(13)</b></td>
+		<td align="center" ><b><font size="1" >(14)</b></td>
+		<td align="center" ><b><font size="1" >(15)</b></td>
+		<td align="center" ><b><font size="1" >(16)</b></td>
+		<td align="center" ><b><font size="1" >(17)</b></td>
+		<td align="center" ><b><font size="1" >(18)</b></td>
+		<td align="center" ><b><font size="1" >(19)</b></td>
+		<td align="center" ><b><font size="1" >(20)</b></td>
+		<td align="center" ><b><font size="1" >(21)</b></td>
+		<td align="center" ><b><font size="1" >(22)</b></td>
+		<td align="center" ><b><font size="1" >(23)</b></td>
+		<td align="center" ><b><font size="1" >(24)</b></td>
+		<td align="center" ><b><font size="1" >(25)</b></td>
+		<td align="center" ><b><font size="1" >(26)</b></td>
+		<td align="center" ><b><font size="1" >(27)</b></td>
+		<td align="center" ><b><font size="1" >(28)</b></td>
+		<td align="center" ><b><font size="1" >(29)</b></td>
+		<td align="center" ><b><font size="1" >(30)</b></td>
+		<td align="center" ><b><font size="1" >(31)</b></td>
+		<td align="center" ><b><font size="1" >(32)</b></td>
+		<td align="center" ><b><font size="1" >(33)</b></td>
+		<td align="center" ><b><font size="1" >(34)</b></td>
+		<td align="center" ><b><font size="1" >(35)</b></td>
+		<td align="center" ><b><font size="1" >(36)</b></td>
+		<td align="center" ><b><font size="1" >(37)</b></td>
+		<td align="center" ><b><font size="1" >(38)</b></td>
+		<td align="center" ><b><font size="1" >(39)</b></td>
+		<td align="center" ><b><font size="1" >(40)</b></td>
+		<td align="center" ><b><font size="1" >(41)</b></td>
+		<td align="center" ><b><font size="1" >(42)</b></td>
+		<td align="center" ><b><font size="1" >(43)</b></td>
+		<td align="center" ><b><font size="1" >(44)</b></td>
+		<td align="center" ><b><font size="1" >(45)</b></td>
+		<td align="center" ><b><font size="1" >(46)</b></td>
+		<td align="center" ><b><font size="1" >(47)</b></td>
+		<td align="center" ><b><font size="1" >(48)</b></td>
+		<td align="center" ><b><font size="1" >(49)</b></td>
+		<td align="center" ><b><font size="1" >(50)</b></td>
+		<td align="center" ><b><font size="1" >(51)</b></td>
+		<td align="center" ><b><font size="1" >(52)</b></td>
+		<td align="center" ><b><font size="1" >(53)</b></td>
+		<td align="center" ><b><font size="1" >(54)</b></td>
+	</tr>
+	</table>
+	<br>
+	<table border=1 cellpadding=0 cellspacing=0 width=320 style='border-collapse:
+ collapse;table-layout:fixed;width:240pt'>
+		 <col width=64 span=5 style='width:48pt'>
+		 <tr height=20 style='height:15.0pt'>
+		  <td rowspan=2 height=40 class=xl65 width=64 style='height:30.0pt;width:48pt'>No</td>
+		  <td rowspan=2 class=xl65 width=64 style='width:48pt'>Nama</td>
+		  <td rowspan=2 class=xl65 width=64 style='width:48pt'>Alamat</td>
+		  <td colspan=2 class=xl65 width=128 style='border-left:none;width:96pt'>Nama
+		  Orang Tua</td>
+		 </tr>
+		 <tr height=20 style='height:15.0pt'>
+		  <td height=20 >Ayah</td>
+		  <td>Ibu</td>
+		 </tr>
+
+		 <tr height=0 style='display:none'>
+		  <td width=64 style='width:48pt'></td>
+		  <td width=64 style='width:48pt'></td>
+		  <td width=64 style='width:48pt'></td>
+		  <td width=64 style='width:48pt'></td>
+		  <td width=64 style='width:48pt'></td>
+		 </tr>
+		</table>
+	</body>
+</html>
