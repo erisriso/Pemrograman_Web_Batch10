@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Latihan Teknik Layout CSS Flexbox</title>
+	</head>
+	<style>
+		.flex-container {  
+			display: -webkit-flex;  
+			display: flex;    
+			-webkit-flex-flow: row wrap;  
+			flex-flow: row wrap;  
+			text-align: center;  
+		}  
+		  
+		.flex-container > * {  
+			padding: 15px;  
+			-webkit-flex: 1 100%;  
+			flex: 1 100%;  
+		}  
+		  
+		.article {  
+			text-align: left;  
+		}  
+		  
+		header {background: #000080;color:white;}  
+		footer {background: #000080;color:white;}  
+		.nav {background:#eee;}  
+		  
+		.nav ul {  
+			list-style-type: none;  
+			padding: 0;  
+		}  
+		.nav ul a {  
+			text-decoration: none;  
+		}  
+		  
+		@media all and (min-width: 768px) {  
+			.nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}  
+			.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}  
+			footer {-webkit-order:3;order:3;}  
+		}  
+	</style>
+	<body>
+		<div class="flex-container">
+			<header>
+				<h1>Contoh Layout Dengan CSS Flexbox</h1>
+			</header>
+			
+			<nav class="nav">
+				<ul>
+					<li><a href="#">Materi HTML</a></li>
+					<li><a href="#">Materi CSS</a></li>
+					<li><a href="#">Materi Javascript</a></li>
+				</ul>
+			</nav>
+			
+			<article class="article">
+				<p><b>Bulma</b> is a responsive modern CSS framework. This framework is built-in HTML, SASS CSS prospector, and CSS flexbox. Bulma gives lots of options to customize with your requirements using sass files, web packs, and variables. Bulma is created in pure CSS., which means while using the framework all you need is one .css file and no .js.</p>
+			</article>
+			
+			<footer>
+				Inio adalah bagian Footer
+			</footer>
+		</div>
+		
+		
+	
+	</body>
+</html>
