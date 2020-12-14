@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  h3 {
+	color: yellow;
+    text-align: center;
+  }
+
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  #divku p,h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  #divku h3 {
+	color: #FF0099;
+    text-align: center;
+  }
+  
+  .kotak_satu{
+	  background-color:green;
+	  color:white;
+	  width:100px;
+	  height:100px;
+	  margin-bottom:20px;
+	  margin-top:10px;
+	  margin-left:25px;
+	  margin-right:0px;
+  }
+  
+  .kotak_dua{
+	  background-color:green;
+	  color:white;
+	  width:100px;
+	  height:100px;
+	  margin: 0px 50px 125px 0px;
+  }
+  
