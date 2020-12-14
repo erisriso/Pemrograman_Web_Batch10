@@ -41,6 +41,15 @@ body {
   .kotak_dua{
 	  background-color:green;
 	  color:white;
+	  width:500px;
+	  height:600px;
+	  margin: 0px 50px 125px 0px;
+  }
+  
+  .ketiga{
+	  background-image: url("../kuciang.jpg");
+	  background-color:white;
+	  color:black;
 	  width:100px;
 	  height:100px;
 	  margin: 0px 50px 125px 0px;
