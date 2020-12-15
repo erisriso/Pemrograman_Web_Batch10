@@ -30,20 +30,35 @@ body {
   .kotak_satu{
 	  background-color:green;
 	  color:white;
-	  width:100px;
-	  height:100px;
+	  width:300px;
+	  height:300px;
 	  margin-bottom:20px;
 	  margin-top:10px;
-	  margin-left:25px;
+	  margin-left:500px;
 	  margin-right:0px;
+	 
+	  padding:30px 50px 60px 50px; 
+	  border: 7px dotted black;
+  }
+  
+  .kotak_satu p{
+	  font-family:calibri;
+	  font-size:17pt;
+	  font-weight:lighter;
+	  letter-spacing:-1px;
+	  line-height:30px;
+	  text-align:justify;
   }
   
   .kotak_dua{
-	  background-color:green;
+	  background-color:#FF3455;
 	  color:white;
 	  width:500px;
 	  height:600px;
 	  margin: 0px 50px 125px 0px;
+	  border-color:red;
+	  border-style:dashed;
+	  border-width:5px;
   }
   
   .ketiga{
