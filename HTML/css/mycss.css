@@ -61,6 +61,22 @@ body {
 	  border-width:5px;
   }
   
+  .kotak_ketiga{
+	  background-color:#FF3455;
+	  color:white;
+	  width:500px;
+	  height:600px;
+	  margin: 0px 50px 125px 0px;
+	  border-color:red;
+	  border-style:dashed;
+	  border-width:5px;
+	  
+  }
+  
+  .kotak_ketiga img{
+	  border-radius:10% 10%;
+  }
+  
   .ketiga{
 	  background-image: url("../kuciang.jpg");
 	  background-color:white;
