@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Latihan Javascript</title>
+		<script language="javascript" type="text/javascript" src="myjs.js"></script>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+			//document.write(hobi+'\n');
+			var nama = 5; //"Eris Riso";
+			var alamat = "Pekanbaru";
+			let hobi = "martial art";
+			const nilai = 3.14;
+			
+			var obj = {}
+
+			//nilai=10;
+			
+			/*
+			- var
+			- let
+			- const
+
+			Tipe Data:
+			- Tipe Data Primitve: Number, Boolean, Null, Undefined, Symbol
+			- Tipe Object
+			
+
+			var b=2;
+			if(true){
+				var b = 3;
+			}
+			*/
+
+			var b=2;
+			function iniScope(){
+				var b=3;
+			}
+			iniScope();
+			alert(b)
+		
+			let c="Isi C Awal";
+			if(true){
+				let c = "Isi C Update";
+			}
+			alert(c);
+
+			function ubahnilai(){
+				//hobi = "baca";
+				let hobi = "baca";
+				//alert(hobi);
+			}
+
+			document.write('Hai, nama saya '+nama+', alamat saya di '+alamat+'<br>');
+			//ubahnilai();
+			//document.write(b);
+			
+
+		</script>
+
+		<br>
+		<input type="button" value="Tombol 1" onclick="ubahnilai();">
+		<input type="button" value="Tombol 2" onclick="alert(hobi);">
+		<br>
+
+		<select>
+			<option>--pilih--</option>
+			<option>1</option>
+			<option>2</option>
+		</select>
+
+	</body>
+
+</html>
