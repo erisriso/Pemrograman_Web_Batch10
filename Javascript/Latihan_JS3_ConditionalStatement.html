@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conditional Statement di Javascript</title>
+
+		
+	</head>
+	<body>
+		<script language="Javascript" type="text/Javascript">
+			let nilai = 10;
+			let huruf = 'A';
+
+			document.write("IF ELSE Statement");
+			document.write("Nilai Angka anda: "+nilai+"<br>");
+			
+			if(nilai==10){
+				if(huruf==='A'){
+					document.write("Nilai Huruf Anda: A+");
+				}else{
+					document.write("Nilai Huruf Anda: A");
+				}
+			}else if(nilai==9){
+				document.write("Nilai Huruf Anda: A");
+			}else if(nilai>6 && nilai<=8){
+				document.write("Nilai Huruf Anda: B");
+			}else if(nilai>4 && nilai<=6){
+				document.write("Nilai Huruf Anda: C");
+			}else{
+				document.write("Nilai Huruf Anda: D");
+			}
+
+
+			
+			document.write("<br>==========================================<br>");
+			document.write("Swtich Case<br>");
+			document.write("Nilai Huruf anda: "+huruf+"<br>");
+
+
+			switch(true){
+				case (huruf==='A' || huruf==='B'):
+					if(nilai==10){
+						document.write("Sempurna");
+					}else if(nilai==9){
+						document.write("Sangat Bagus Sekali");
+					} 
+					break;
+				case (huruf==='C'):
+					document.write("Bagus Sekali");
+					break;
+				case (huruf==='D'):
+					document.write("Bagus");
+					break;
+				default:
+					document.write("Cukup");
+			}
+
+			/*
+				
+			*/
+		</script>
+
+		<!--select name="makanan" id="makanan">
+			<option value="">--pilih--</option>
+			<option value="bakso">Bakso</option>
+			<option value="mieayam">Mie Ayam</option>
+			<option value="mierebus">Mie Rebus</option>
+			<option value="miegoreng">Mie Goreng</option>
+			
+		</select-->
+
+	</body>
+</html>
