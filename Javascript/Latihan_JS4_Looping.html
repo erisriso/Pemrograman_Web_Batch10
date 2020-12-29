@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Looping</title>
+	</head>
+	<body>
+		<h3>While Loop</h3>
+
+		<script language="javascript" type="text/javascript">
+			var angka=0;
+			var angka2=20;
+			//tampilkan sepuluh angka pertama => 0 1 2 3 4 5 6 7 8 9
+			//angka dibawah 10
+			document.write("tampilkan sepuluh angka pertama => 0 1 2 3 4 5 6 7 8 9<br>");
+			document.write("Proses looping dimulai<br>");
+			while(angka<angka2){
+				document.write("Angka sekarang: "+angka+"<br>");
+				angka++;
+			}
+
+			document.write("Proses looping berakhir");
+
+			//Latihan_JS4_Looping.html
+
+			//Kalau misalnya saya mau proses pengulangannya itu dimulai dari 1-5 
+			//kemudian proses pengulangan akan dimulai lagi dari 10-15 bisa nggak kak?
+
+			
+			var angka1 = 1;
+			//var angka2 = 20;
+			var angkatemp;
+			while(angka1<=angka2){
+				if((angka1>=1 && angka1<=5) || (angka1>=10 && angka1<=15)){
+					document.write("Angka sekarang: "+angka1+"<br>");
+				}
+				angka1++;
+			}
+			
+			
+		</script>
+
+		<h3>Do While Loop</h3>
+		<script language="javascript" type="text/javascript">
+			
+			var angka3 = 0;
+			var angka2 = 0;
+			document.write("Proses looping Do While Loop dimulai<br>");
+			do{
+				document.write("Angka sekarang: "+angka3+"<br>");
+				angka3++;
+			}while(angka3<angka2);
+
+			document.write("Proses looping berakhir");
+
+			
+		</script>
+
+	</body>
+</html>
