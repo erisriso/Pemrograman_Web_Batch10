@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>While Loops dan Do While</title>
+    </head>
+
+    <body>
+        <input type="text" name="tinggi" id="tinggi">
+        <input type="button" value="Tampilkan Pohon Bintang" onclick="tampilkanBintang();">
+        <p id="data_siswa"></p>
+        <p id="data_siswa2"></p>
+        <code style="background:aquamarine;">
+            <h3>Perintah While Loops dan Do While</h3>
+            <br>
+            while(ekspresi){  <br>          
+                //blok perintah<br>
+            }<br><br>
+
+            do {<br>
+                //blok perintah<br>
+            } while(ekspresi); <br>
+            
+           <br><br>
+
+           for(statement 1;statement 2;statement 3){<br>
+               //blok perintah<br>
+           }<br>
+
+           for(expres in object){<br>
+                //blok perintah<br>
+           }<br>
+        
+        </code>
+        <br>
+        <script type="text/javascript" lang="javascript">
+            function tampilkanBintang(){
+                var tinggibintang = document.getElementById("tinggi").value;
+                var baris = 0;
+                var cetak = "";
+
+                while(baris<tinggibintang){
+                    count = 0;
+                    while(count<tinggibintang - baris){
+                        document.write("&nbsp;&nbsp;");
+                        count++;
+                    }
+
+                    count = 0;
+                    while(count < (2*baris)+1){
+                        document.write("*");
+                        count++;
+                    }
+
+                    document.write("<br>");
+                    baris++;
+                }
+
+            }
+            document.write("Contoh penggunaan While Loops<br>");
+            var angka = 1;
+            document.write("Memulai Loop<br>");
+
+            while(angka<10){
+                /*angka = angka+1;
+                if(angka==5){
+                    continue;
+                }*/
+                document.write(angka+". Angka sekarang: "+angka+"<br>");
+                angka++;
+            }
+            document.write("Akhir Loop<br>");
+
+            document.write("<br><br>");
+            var angka2 = 1;
+            document.write("Memulai Do Loop<br>");
+            do{
+                document.write("Angka sekarang: "+angka2+"<br>");
+                angka2++;
+            } 
+            while(angka2 < 10 );
+
+            document.write("Akhir Do Loop<br><br>");
+
+            document.write("Contoh penggunaan For<br>");
+
+            for(x=1;x<=10;x++){
+                document.write("X ke: "+x+"<br>");
+            }
+
+            document.write("<br><br>");
+
+            var data_siswa = {nama:"Eris",alamat:"Pekanbaru",no_telp:"08777777"};
+            var text = "";
+            var x;
+            for(x in data_siswa){
+                text += data_siswa[x] + "#";
+            }
+            document.getElementById("data_siswa").innerHTML = text;
+
+            document.write("<br><br>");
+
+            var data_siswa2 = ["Eris","Pekanbaru","08777777"];
+            var text2 = "";
+            var y;
+            for(y of data_siswa2){
+                text2 += y + "<br>";
+            }
+            document.getElementById("data_siswa2").innerHTML = text2;
+
+            var z,a;
+            var array3d = [
+                [1,2,3],
+                [4,5,6],
+                [7,8,9],
+            ];
+
+            document.write("array3d = [<br>[1,2,3],<br>[4,5,6],<br>[7,8,9],<br>]<br>");
+
+            for(z=0;z<array3d.length;z++){
+                var datarr = array3d[z];
+                for(a=0;a<datarr.length;a++){
+                    document.write("array["+z+"]["+a+"]: "+datarr[a]+"<br>");
+                }
+            }
+
+        </script>
+        
+        
+    </body>
+</html>
