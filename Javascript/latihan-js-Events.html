@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript: Events</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var Nilai1 = 200;
+			var Nilai2 = 100;
+			
+			function isikanNilai(){
+				var nilai = document.getElementById("slSatu").value;
+				document.getElementById('txtSatu').value=nilai;
+				document.getElementById("idP").innerHTML="Ini adalah hasil inner HTML";
+			}
+
+
+			function selesaiLoad(slSatu){
+				alert(slSatu.value);
+			}
+
+			function hitung(par1,par2,par3){
+				var hasil = (par1 + par2)*par3
+				document.getElementById("txtDua").value = hasil
+			}
+
+		</script>
+		
+		<select name="slSatu" id="slSatu" class="pilihan1" onchange="selesaiLoad(this);">
+			<option value="">--pilih--</option>
+			<option value="1">Satu</option>
+			<option value="2">Dua</option>
+		</select>
+		<br>
+		<br>
+		<br>
+		<br>
+		<input type="text" name="txtSatu" id="txtSatu">
+		<br>
+		<br>
+		<input type="text" name="txtSatu" id="txtDua">
+		<br>
+		<br>
+
+		<br>
+		<br>
+		<input type="button" value="Tampilkan Hasil" onclick="hitung(Nilai1,Nilai2,document.getElementById('txtSatu').value);" >
+		
+	</body>
+</html>
